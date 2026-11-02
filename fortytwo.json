@@ -1,0 +1,34 @@
+{
+  "name": "fortytwo",
+  "engine": "openai",
+  "display_name": "Fortytwo",
+  "description": "Qwen3.8 27B through the Fortytwo OpenAI-compatible API",
+  "api_key_env": "FORTYTWO_API_KEY",
+  "base_url": "https://api.fortytwo.network/v1/chat/completions",
+  "headers": {
+    "http-referer": "https://goose-docs.ai",
+    "x-title": "goose"
+  },
+  "models": [
+    {
+      "name": "qwen/qwen3.8-27b",
+      "context_limit": 262144,
+      "input_token_cost": 4.25e-07,
+      "output_token_cost": 2.55e-06,
+      "cache_read_token_cost": 8.5e-08,
+      "currency": "USD",
+      "reasoning": true,
+      "supports_vision": true,
+      "cache_write_token_cost": 0
+    }
+  ],
+  "dynamic_models": false,
+  "supports_streaming": true,
+  "preserves_thinking": true,
+  "model_doc_link": "https://docs.fortytwo.network/docs/models",
+  "setup_steps": [
+    "Sign up at https://platform.fortytwo.network",
+    "Create an API key",
+    "Enter it as FORTYTWO_API_KEY"
+  ]
+}
